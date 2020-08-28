@@ -7,19 +7,23 @@ public class Set {
 	public static void Set() {
 		front = rear = null;
 		count = 0;
+	
 	}
-
 	public static void add(int x) {
 		LinkedNode newNode = new LinkedNode(x);
-		if (front == null) {
-			front = rear = newNode;
-		} else {
+		if (front != null) 
 			rear.next = newNode;
+		else 
+			front = newNode;
+			rear = newNode;
 			count++;
+			System.out.println(count);
 		}
+
 	}
 
-	void delete(int x) {
+
+	/*void delete(int x) {
 	//we know that integer is in the List; we need to re-link the previous with the one in front.	
 		if (target = int x)
 	}
@@ -32,4 +36,4 @@ public class Set {
 			return false;
 		}
 	}
-}
+}*/
