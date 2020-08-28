@@ -20,12 +20,13 @@ public class Set {
 			System.out.println(count);
 		}
 
-	}
+}
+	
 
 
-	/*void delete(int x) {
-	//we know that integer is in the List; we need to re-link the previous with the one in front.	
-		if (target = int x)
+public static void delete(int x) {
+	if (current != front && != rear)
+		
 	}
 
 	public boolean exists(int x) {
