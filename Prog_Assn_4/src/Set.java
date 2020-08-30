@@ -1,3 +1,6 @@
+//Programming Assignment 4 Kip Brower 08-29-20 CPSC 50100-002
+//Incomplete
+//----------------------------------------------------------
 import java.awt.List;
 
 
@@ -34,7 +37,7 @@ public class Set {
     while (current != null && !found)
         if (target.equals(current.getElement()))
             found = true;
-        else
+	else
         {
             previous = current;
             current = current.getNext();
@@ -59,14 +62,14 @@ public class Set {
     return current.getElement();
 }
 
-	public boolean exists(int x) {
+	/*public boolean exists(int x) {
 		if (the value is found in the list) {
 		return true;
 		
 		} else {
 			return false;
 		}
-	}
+	}*/
 
 public static boolean isEmpty() {
 	if (count == 0) {
