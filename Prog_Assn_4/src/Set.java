@@ -1,11 +1,11 @@
 
 //Programming Assignment 4 Kip Brower 08-29-20 CPSC 50100-002
-//Incomplete
+// Set.java -  uses LinkedList.java from the class supplemental examples.
 //----------------------------------------------------------
 import java.awt.List;
 
 public class Set {
-	public static LinkedNode current, previous, target, next, front, list;
+	public static LinkedNode current, previous, next, front;
 	boolean found;
 	public static int count = 0, modCount;
 	
@@ -63,36 +63,15 @@ public class Set {
 		return current.getElement();
 	}
 
-	/*
-	 * public boolean exists(int x) { if (the value is found in the list) { return
-	 * true;
-	 * 
-	 * } else { return false; } }
-	 */
-public String toString() {
 	
-}
-	public static boolean isEmpty() {
-		if (count == 0) {
-			return true;
-		} else {
-			return false;
-		}
-	}
+	 public boolean exists(int x) { 
+		 if (the value is found in the list) { 
+		 return true;
+	 } else { 
+		 return false; 
+		 }
+	 }
+	
 
-	public static int size() {
-		return count;
-	}
-
-	public LinkedNode getNext() {
-		return next;
-	}
-
-	public void setNext(LinkedNode node) {
-		next = node;
-	}
-
-	public LinkedNode getElement() {
-		return element;
-	}
+	
 }
